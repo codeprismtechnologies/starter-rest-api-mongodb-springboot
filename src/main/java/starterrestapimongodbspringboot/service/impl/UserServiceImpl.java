@@ -109,7 +109,7 @@ public class UserServiceImpl implements UserService {
      */
     @Transactional(readOnly = true)
     public Page<User> getAllUser(Integer pageNumber, Integer pageSize) {
-        log.info("Entered into getAllUser service method. user requested count was");
+        log.info("Entered into getAllUser service method. requested pageNumber {} and pageSize {} ", pageNumber, pageSize);
         Pageable pageable = PageRequest.of(pageNumber, pageSize, Sort.by(Sort.Direction.DESC, "createdAt"));
         return this.userRepository.findAll(pageable);
     }
