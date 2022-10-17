@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:passw0rd@codeprism.dazwgpf.mongodb.net/?retryWrites=true&w=majority
+      database: springbootrestmongotestdb
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
