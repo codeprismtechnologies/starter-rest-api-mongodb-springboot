@@ -3,7 +3,6 @@ package starterrestapimongodbspringboot.entity;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import starterrestapimongodbspringboot.constant.Gender;
 import starterrestapimongodbspringboot.constant.Role;
 
 import java.time.LocalDate;
@@ -25,7 +24,7 @@ public class User {
     private String email;
     private String phoneNumber;
     private LocalDate dateOfBirth;
-    private Gender gender;
+    private String gender;
     private Role role;
     private String language;
     private String state;

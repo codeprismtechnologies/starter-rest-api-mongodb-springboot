@@ -1,13 +1,10 @@
 package starterrestapimongodbspringboot.dto;
 
 import lombok.Data;
-import starterrestapimongodbspringboot.constant.Gender;
+import starterrestapimongodbspringboot.annotation.ValidateGender;
 import starterrestapimongodbspringboot.constant.Role;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
+import javax.validation.constraints.*;
 
 /**
  * @author : Chandan Rai
@@ -33,7 +30,8 @@ public class UserRequest {
     private String dateOfBirth;
 
     @NotNull(message = "gender can't be null")
-    private Gender gender;
+    @ValidateGender
+    private String gender;
 
     @NotNull(message = "role can't be null")
     private Role role;

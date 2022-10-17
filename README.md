@@ -35,7 +35,7 @@ git clone https://github.com/codeprismtechnologies/starter-rest-api-mongodb-spri
 **Step : 1**
 #### **If you want to set up your own cloud mongoDB please refer this link: https://www.mongodb.com/basics/mongodb-atlas-tutorial**
 **Step : 2**
-#### Copy your cloud mongoDB URI and Replace it to application.yml file configured URI
+#### Copy your cloud mongoDB URI and Replace it to existing configured URI which is in application.yml
 
 ### **Pre-requisites:**
 * Make sure you are using Java version 17
